@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мастерская Жалюзи</title>
+  <link rel="icon" type="image/png" href="" />
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font/gilroy.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/slider3.css">
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+
+  <link rel="stylesheet" href="fancyBox/jquery.fancybox.min.css">
+</head>
+
+<body>
+  <div class="col-md-4 col-xs-12 b-popup" id="popup1">
+    <div й class="pricepop lux b-popup-content">
+      <div class="popup_content_button">
+        <a href="javascript:PopUpHide()" class="exit"><img src="img/popup/exit.png" alt=""></a>
+
+        <div class="popup_tittle">
+          <p>Замерщик уже собрал все, что нужно.</p>
+          <h1>Куда ехать?</h1>
+        </div>
+        <form class="form-modal" action="#" data-wow-delay="0.8s" method="post" id="form-popup">
+          <div class="popup_input">
+            <input type="hidden" name="DATA[TITLE]" value="Рассчитать сумму по залогу" class="title">
+
+            <input type="text" class="input-text input-text_dark name" name="DATA[NAME]" value="" placeholder="Имя" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+          <div class="popup_input">
+            <input type="text" name="" class="input-text input-text_dark phone-input" id="phone2" value="" name="DATA[PHONE_MOBILE]" placeholder="+38 (___) ___-__-__" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+
+          <input class="button button_actb" type="submit" value="Рассчитать условия" />
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-4 col-xs-12 b-popup" id="popup2">
+    <div й class="pricepop lux b-popup-content">
+      <div class="popup_content_button">
+        <a href="javascript:PopUpHide2()" class="exit"><img src="img/popup/exit.png" alt=""></a>
+
+        <div class="popup_tittle">
+          <p>Консультант перезвонит в течение 15 минут и ответит на все вопросы</p>
+          <h1>Куда перезвонить?</h1>
+        </div>
+        <form class="form-modal" action="#" data-wow-delay="0.8s" method="post" id="form-credit">
+          <div class="popup_input">
+            <input type="hidden" name="DATA[TITLE]" value="Куда перезвонить?" class="title">
+
+            <input type="text" class="input-text input-text_dark name" name="DATA[NAME]" value="" placeholder="Имя" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+          <div class="popup_input">
+            <input type="text" name="" class="input-text input-text_dark phone-input" id="phone2" value="" name="DATA[PHONE_MOBILE]" placeholder="+38 (___) ___-__-__" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+
+          <input class="button button_actb" type="submit" value="Рассчитать условия" />
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="col-md-4 col-xs-12 b-popup" id="popup3">
+    <div й class="pricepop lux b-popup-content">
+      <div class="popup_content_button">
+        <a href="javascript:PopUpHide3()" class="exit"><img src="img/popup/exit.png" alt=""></a>
+
+        <div class="popup_tittle">
+          <p>Спасибо что вы с нами</p>
+          <h1>Наш менеджер вам перезвонит</h1>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script>
+    $(document).ready(function() {
+
+    });
+
+    function PopUpShow() {
+      $("#popup1").css('display', 'flex');
+    }
+
+    function PopUpHide() {
+      $("#popup1").hide();
+    }
+
+    function PopUpShow2() {
+      $("#popup2").css('display', 'flex');
+    }
+
+    function PopUpHide2() {
+      $("#popup2").hide();
+    }
+
+    function PopUpShow3() {
+      $("#popup3").css('display', 'flex');
+    }
+
+    function PopUpHide3() {
+      $("#popup3").hide();
+    }
+  </script>
+  <header>
+    <div class="block1_content">
+
+
+      <div class="header_logo">
+        <div class="header_logo_left">
+          <img src="img/block1/Logo.png" alt="">
+        </div>
+
+        <div class="header_logo_center">
+          <nav>
+            <a href=""><img src="img/block1/viber.png" alt=""></a>
+            <a href=""><img src="img/block1/telegram.png" alt=""></a>
+            <a href=""><img src="img/block1/facebook.png" alt=""></a>
+            <a href=""><img src="img/block1/instagram.png" alt=""></a>
+          </nav>
+          <p>Подпишись и получи в подарок фиксацию ткани!</p>
+        </div>
+
+        <div class="header_logo_right">
+          <div class="header_logo_right_phone">
+            <img src="img/block1/phone.png" alt="">
+            <a href="tel:(098) 633-08-66">(098) 633-08-66</a>
+          </div>
+          <div class="header_logo_right_phone">
+            <img src="img/block1/phone.png" alt="">
+            <a href="tel:(050) 633-08-66">(050) 633-08-66</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="header_logo_mobile">
+        <div class="header_logo_center_mobile">
+          <nav>
+            <a href=""><img src="img/block1/viber.png" alt=""></a>
+            <a href=""><img src="img/block1/telegram.png" alt=""></a>
+            <a href=""><img src="img/block1/facebook.png" alt=""></a>
+            <a href=""><img src="img/block1/instagram.png" alt=""></a>
+          </nav>
+          <p>Подпишись и получи в подарок фиксацию ткани!</p>
+        </div>
+      </div>
+      <div class="block1_info">
+        <h1>Роллеты «день-ночь»</h1>
+        <h1>европейского производства</h1>
+        <p class="cycle">Полный цикл от замера до монтажа</p>
+        <img src="img/block1/zanaves.png" alt="" class="zanaves_mobile">
+        <div class="block1_info_fon">
+          <img src="img/block1/info.png" alt="">
+          <div class="block1_info_fon_text">
+            <p>Празднуйте с нами! 7 лет качества. </p>
+            <p>Запишитесь на бесплатный замер до 18 ноября </p>
+            <p>и получите скидку -15% на любые шторы "день-ночь"!</p>
+          </div>
+        </div>
+        <a href="javascript:PopUpShow()">Записаться на замер</a>
+        <img src="img/block1/zanaves.png" alt="" class="zanaves">
+
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="block2">
+      <img src="img/block2/star_fon.png" alt="" class="star1_block2">
+      <img src="img/block2/star_fon.png" alt="" class="star2_block2">
+      <div class="block2_content">
+        <p class="block2_content_tittle">Узнайте стоимость роллет за 15 минут</p>
+        <p>Консультант презвонит, уточнит детали для проссчёта, ответи на все вопросы
+          и рассчитает точную стоимость</p>
+        <form class="calc wow fadeIn" action="#" data-wow-delay="0.8s" method="post" id="form-calc">
+          <div class="block2_form_input">
+            <input type="hidden" name="DATA[TITLE]" value="Узнайте стоимость роллет за 15 минут" class="title">
+            <div class="block2_input">
+              <input type="text" class="question" value="" placeholder="Сколько окон?" name="DATA[COMMENTS]">
+            </div>
+            <div class="block2_input">
+              <input type="text" class="input-text input-text_cl size" value="" placeholder="Размеры" name="DATA[SIZE]">
+            </div>
+            <div class="block2_input">
+              <input type="text" value="" placeholder="Имя" class="input-text input-text_cl name" required name="DATA[NAME]">
+              <img src="img/block2/stars.png" alt="">
+            </div>
+            <div class="block2_input">
+              <input type="text" value="" id="phone" class="input-text input-text_cl phone-input" name="DATA[PHONE_MOBILE]" placeholder="+38 (___) ___-__-__">
+              <img src="img/block2/stars.png" alt="">
+
+            </div>
+          </div>
+          <input id="subs_btn" class="button button_frm" type="submit" value="Узнать стоимость" style="" name="">
+
+        </form>
+
+        <div class="formcomplete formcomplete_big formcomplete_ok"></div>
+        <div class="formcomplete formcomplete_big formcomplete_error"></div>
+
+      </div>
+    </div>
+    <div class="block3">
+
+      <div class="block3_info">
+        <img src="img/block2/star_fon.png" alt="" class="star1_block3">
+        <img src="img/block2/star_fon.png" alt="" class="star2_block3">
+        <img src="img/block2/star_fon.png" alt="" class="star3_block3">
+        <img src="img/block2/star_fon.png" alt="" class="star4_block3">
+        <img src="img/block2/star_fon.png" alt="" class="star5_block3">
+        <p class="block3_tittle">3 причины выбрать роллеты</p>
+        <p class="block3_tittle">от Мастерской жалюзи</p>
+        <div class="block3_content">
+          <div class="block3_content_item">
+            <div class="block3_content_left">
+              <img src="img/block3/item1.png" alt="">
+            </div>
+            <div class="block3_content_right">
+              <p>Только европейские материалы</p>
+              <p class="">Мы используем
+                сертифицированную польскую фурнитуру - Besta, Anwis, Ba,ar-Pol.
+                В отличие от дешевых китайских или украинских аналогов, благодаря
+                использованию более дорогого мягкого пластика польская фурнитура:</p>
+              <div class="block3_content_right_check">
+                <img src="img/block3/check.png" alt="">
+                <p class="check_block3">не скрипит, изготовлена из первичного пластика</p>
+              </div>
+              <div class="block3_content_right_check">
+                <img src="img/block3/check.png" alt="">
+                <p class="check_block3">не желтеет под воздействием солнечных лучей</p>
+              </div>
+              <div class="block3_content_right_check">
+                <img src="img/block3/check.png" alt="">
+                <p class="check_block3">не образует микро трещин, что ведет в последствии к излому кронштейнов</p>
+              </div>
+              <p>Поэтому наша система прослужит и 5, и 10 лет без поломок!</p>
+              <p>При этом останется белоснежной, как в первый день.</p>
+            </div>
+          </div>
+          <div class="block3_content_item_active">
+            <div class="block3_content_left">
+              <img src="img/block3/item2.png" alt="">
+            </div>
+            <div class="block3_content_right">
+              <p>Новая коллекция! Ткани 2020 года</p>
+              <p>Мы подобрали для вас более 600 самых популярных в Европе тканей!
+                Качественных и безопасных, которые не выгорают на солнце и прошли все возможные сертификации.
+              </p>
+
+              <p>Вы же не хотите, чтобы вам установили роллеты из коллекции
+                позапрошлого года - с остатков на складе?</p>
+              <p>Мы приготовили для вас новинки!</p>
+              <a href="javascript:PopUpShow()">Выбрать ткань</a>
+
+            </div>
+          </div>
+
+          <div class="block3_content_item">
+            <div class="block3_content_left">
+              <img src="img/block3/item3.png" alt="">
+            </div>
+            <div class="block3_content_right">
+              <p>Документальное оформление</p>
+              <p>Уже на этапе замера мы подписываем договор, чтобы вы были уверены
+                в своем заказе:</p>
+              <div class="block3_content_right_check">
+                <img src="img/block3/check.png" alt="">
+                <p class="check_block3">указываем граничные сроки и санкции за их нарушение</p>
+              </div>
+              <div class="block3_content_right_check">
+                <img src="img/block3/check.png" alt="">
+                <p class="check_block3">четко прописываем выбранные вами названия ткани и фурнитуры
+                </p>
+              </div>
+              <div class="block3_content_right_check">
+                <img src="img/block3/check.png" alt="">
+                <p class="check_block3">указываем срок и условия гарантии</p>
+              </div>
+              <p>Часто люди верят на слово - а потом ждут установки месяцами. Установщики привозят не те материалы или отказываются нести ответственность
+                за поломки…</p>
+              <p class="item3_3">С Мастерской жалюзи это исключено</p>
+            </div>
+          </div>
+          <a href="javascript:PopUpShow()" class="block3_footer_button">Заказать замер</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="block4">
+      <div class="block4_content">
+        <img src="img/block2/star_fon.png" alt="" class="star1_block4">
+        <img src="img/block2/star_fon.png" alt="" class="star2_block4">
+        <p class="block4_tittle">Более 7 лет мы несем уют в ваши дома </p>
+
+        <div class="container" style="z-index:9999">
+
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__item">
+                <div style=""><a href="img/block4/slide1.png" data-fancybox="gallery">
+                    <img src="img/block4/slide1.png" alt=""></a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div style="">
+                  <a href="img/block4/slide2.png" data-fancybox="gallery">
+                    <img src="img/block4/slide2.png" alt=""></a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div style="">
+                  <a href="img/block4/slide3.png" data-fancybox="gallery">
+                    <img src="img/block4/slide3.png" alt=""></a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div style="">
+                  <a href="img/block4/slide2.png" data-fancybox="gallery">
+                    <img src="img/block4/slide2.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <a class="slider__control slider__control_left" href="#" role="button"></a>
+            <a class="slider__control slider__control_right" href="#" role="button"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="block5">
+      <img src="img/block2/star_fon.png" alt="" class="star1_block5">
+      <img src="img/block2/star_fon.png" alt="" class="star2_block5">
+      <div class="block5_content">
+
+        <p class="block5_tittle">Изготавливаем любые виды жалюзи и рулонных штор</p>
+        <div class="sliderKolya2">
+
+          <div class="slider2">
+            <div class="slider__wrapper2">
+              <div class="slider__item2">
+                <div style="">
+                  <a href="katalog.html">
+                    <img src="img/block5/item1.png" alt=""></a>
+                  <p>Рулонные шторы</p>
+                  <a class="button_slider2" href="katalog.html">Смотреть ткани</a>
+                </div>
+              </div>
+              <div class="slider__item2">
+                <div style="">
+                  <a href="katalog.html">
+                    <img src="img/block5/item2.png" alt=""></a>
+                  <p>Римские шторы</p>
+                  <a class="button_slider2" href="katalog.html">Смотреть ткани</a>
+                </div>
+              </div>
+              <div class="slider__item2">
+                <div style="">
+                  <a href="katalog.html">
+                    <img src="img/block5/item3.png" alt=""></a>
+                  <p>Тканевые ролеты в коробе</p>
+                  <a class="button_slider2" href="katalog.html">Смотреть ткани</a>
+                </div>
+              </div>
+              <div class="slider__item2">
+                <div style="">
+                  <a href="katalog.html">
+                    <img src="img/block5/item4.png" alt=""></a>
+                  <p>Горизонтальные жалюзи</p>
+                  <a class="button_slider2" href="katalog.html">Смотреть цвета </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a class="slider__control2 slider__control_left2" href="#" role="button"></a>
+          <a class="slider__control2 slider__control_right2 slider__control_show2" href="#" role="button"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block6">
+      <img src="img/block2/star_fon.png" alt="" class="star1_block6">
+      <img src="img/block2/star_fon.png" alt="" class="star2_block6">
+      <img src="img/block2/star_fon.png" alt="" class="star3_block6">
+      <div class="block6_content">
+
+        <div class="block6_content_top">
+          <div class="block6_content_top_image">
+            <img src="img/block6/item1.png" alt="">
+            <img src="img/block6/item2.png" alt="">
+            <img src="img/block6/item3.png" alt="">
+          </div>
+          <a href="#" class="block6_facebook_button"><img src="img/block6/facebook.png" alt="">Смотреть все</a>
+        </div>
+        <p class="block6_tittle_content_footer">Ответы на частые вопросы</p>
+        <div class="block6_content_footer">
+          <div class="block6_content_footer_left">
+            <div class="block6_content_footer_left_item" id="item1">
+              <div class="select" id="select1">
+                <p>Как долго ждать заказ?</p>
+                <a href="javascript:Select1()" id="button1"><img src="img/block6/questions.png" alt=""></a>
+              </div>
+              <div class="option" id="option1">
+                <p>Изготовление от 2 до 5 дней!</p>
+              </div>
+            </div>
+            <div class="block6_content_footer_left_item" id="item2">
+              <div class="select" id="select2">
+                <p>Где можно посмотреть книги?</p>
+                <a href="javascript:Select2()" id="button2"><img src="img/block6/questions.png" alt=""></a>
+              </div>
+              <div class="option" id="option2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="block6_content_footer_left_item" id="item3">
+              <div class="select" id="select3">
+                <p>Как их стирать?</p>
+                <a href="javascript:Select3()" id="button3"><img src="img/block6/questions.png" alt=""></a>
+              </div>
+              <div class="option" id="option3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              </div>
+            </div>
+            <div class="block6_content_footer_left_item" id="item4">
+              <div class="select" id="select4">
+                <p>Где можно посмотреть цены?</p>
+                <a href="javascript:Select4()" id="button4"><img src="img/block6/questions.png" alt=""></a>
+              </div>
+              <div class="option" id="option4">
+                <p>Lorem ipsum dolor sit am</p>
+              </div>
+            </div>
+            <div class="block6_content_footer_left_item" id="item5">
+              <div class="select" id="select5">
+                <p>Как правильно замерять?</p>
+                <a href="javascript:Select5()" id="button5"><img src="img/block6/questions.png" alt=""></a>
+              </div>
+              <div class="option" id="option5">
+                <p>Изготовление от 2 до 5 дней!</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="block6_content_footer_right">
+            <img src="img/block6/right_photo.png" alt="">
+          </div>
+        </div>
+        <a href="javascript:PopUpShow2()" class="block6_button_footer">Получить консультацию</a>
+      </div>
+    </div>
+    <div class="block7">
+      <div class="block7_content">
+        <div class="content">
+
+          <div class="block7_content_left">
+            <img src="img/block7/man.png" alt="">
+          </div>
+          <div class="block7_content_right">
+            <p>Хотите увидеть каталог тканей собственными глазами?</p>
+            <p>Закажите бесплатный замер. Опытный специалист все тщательно измерит, поможет в выборе тканей и назовет окончательную сумму.</p>
+            <p>Бесплатно. Даже если вы ничего не закажете.</p>
+            <p>Управляйте солнцем с нами</p>
+            <a href="javascript:PopUpShow()">Записаться на замер</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="footer_content">
+      <div class="left_content">
+        <p>© Мастерская жалюзи Zanaves.</p>
+        <p>Все права защищены.</p>
+        <img src="img/footer/sign.png" alt="">
+      </div>
+      <div class="center_content">
+        <div class="social">
+          <a href="#"><img src="img/footer/viber.png" alt=""></a>
+          <a href="#"><img src="img/footer/telegram.png" alt=""></a>
+          <a href="#"><img src="img/footer/facebook.png" alt=""></a>
+          <a href="#"><img src="img/footer/instagram.png" alt=""></a>
+
+        </div>
+        <p>Подпишись и получи в подарок фиксацию ткани!</p>
+      </div>
+      <div class="right_content">
+        <div class="mobile">
+          <div class="mobile_item">
+            <img src="img/footer/phone.png" alt="">
+            <a href="tel:(098) 633-08-66">(098) 633-08-66</a>
+
+          </div>
+          <div class="mobile_item">
+            <img src="img/footer/phone.png" alt="">
+            <a href="tel:(050) 633-08-66">(050) 633-08-66</a>
+
+          </div>
+        </div>
+        <div class="mail">
+          <img src="img/footer/email.png" alt="">
+          <a href="mailto:info.zanaves@gmail.com">info.zanaves@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+  <script src="js/slider2.js"></script>
+  <script src="js/slider3.js"></script>
+  <script src="js/home.js"></script>
+
+  <script src="fancyBox/jquery.fancybox.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/jquery.maskedinput.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#phone").mask("+38 (999) 999-99-99");
+      $("#phone2").mask("+38 (999) 999-99-99");
+
+    });
+  </script>
+
+</body>
+
+</html>

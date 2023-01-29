@@ -1,0 +1,214 @@
+.submit, .popup_content_button .button {
+  background-color: #f26d28;
+  box-shadow: 0px 14px 27px 0px rgba(94, 46, 21, 0.34);
+  border-radius: 55px;
+  font-size: 16px;
+  font-family: "Gilroy-Heavy";
+  color: white;
+  padding: 25px 50px;
+  display: inline-flex;
+  border: 0px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.b-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999999;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.b-popup .b-popup-content {
+  padding: 15px;
+}
+
+.b-popup-content {
+  min-width: 470px;
+}
+@media only screen and (max-width: 600px) {
+  .b-popup-content {
+    min-width: 95%;
+  }
+}
+
+.exit {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.popup_content_button {
+  max-width: 470px;
+  background-color: white;
+  padding: 60px 13%;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .popup_content_button {
+    padding: 30px 4%;
+  }
+}
+.popup_content_button .popup_tittle p {
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1600));
+  font-family: "Gilroy-Medium";
+  color: #2c201a;
+  text-align: center;
+}
+.popup_content_button .popup_tittle h1 {
+  font-size: calc(22px + 26 * ((100vw - 320px) / 1600));
+  font-family: "Gilroy-Heavy";
+  color: #2c201a;
+  line-height: 1;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.popup_content_button .popup_input {
+  position: relative;
+}
+.popup_content_button .popup_input input {
+  padding-left: 15px;
+  width: 100%;
+  height: 60px;
+  border: 0px;
+  background-color: #fdf1ea;
+  font-size: 16px;
+  font-family: "Gilroy-Regular";
+  color: #2c201a;
+  margin-bottom: 20px;
+}
+.popup_content_button .popup_input img {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+.popup_content_button .button {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 30px;
+}
+.popup_content_button .button:hover {
+  background: linear-gradient(#f26d28 0%, #fe955f 100%);
+  transition: 0.5s;
+}
+
+.exit {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.popup_content_form_tittle {
+  font-size: calc(22px + 14 * ((100vw - 320px) / 1600));
+  font-family: "Avenir Next Cyr";
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+.popup_content_form_tittle2 {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  font-family: "Avenir Next Cyr";
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1400px) {
+  .popup_content_form_tittle2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.submit {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  place-self: center;
+  place-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  height: 70px;
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+  cursor: pointer;
+}
+@media only screen and (max-width: 1400px) {
+  .submit {
+    height: 50px;
+  }
+}
+
+.field__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+  text-align: center;
+}
+@media only screen and (max-width: 1400px) {
+  .field__wrapper {
+    margin: 5px 0;
+  }
+}
+
+.field__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.field__file-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.field__file-fake {
+  background-color: white;
+  border-radius: 50px;
+  height: 70px;
+  width: calc(100% - 130px);
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  border-radius: 50px;
+  border-right: none;
+  width: 100%;
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+  font-family: "Avenir Next Cyr";
+  color: #3cb07a;
+  font-weight: 900;
+}
+@media only screen and (max-width: 1400px) {
+  .field__file-fake {
+    height: 50px;
+  }
+}
+
+.field__file-button {
+  right: 5%;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/popup/download.png");
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}

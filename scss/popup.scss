@@ -1,0 +1,238 @@
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+%button_linear{
+  background-color: rgb(242, 109, 40);
+  box-shadow: 0px 14px 27px 0px rgba(94, 46, 21, 0.34);
+  border-radius: 55px;
+    font-size: 16px;
+    font-family: "Gilroy-Heavy";
+    color: rgb(255, 255, 255);
+    padding:25px 50px;
+    display: inline-flex;
+    border:0px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.b-popup{
+    position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: none;
+align-items: center;
+ justify-content: center;
+ background-color: rgba(0, 0, 0, 0.6);
+ z-index: 999999;
+ font-family: 'PT Sans Caption', sans-serif;
+}
+
+.b-popup .b-popup-content{
+ padding: 15px;
+}
+.b-popup-content{
+  min-width: 470px;
+  @media only screen and (max-width: 600px){
+    min-width: 95%;
+}
+}
+.exit{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.popup_content_button {
+  max-width: 470px;
+
+  background-color: white;
+  padding: 60px 13%;
+  position: relative;
+
+  @media only screen and (max-width: 600px){
+    padding: 30px 4%;
+}
+  .popup_tittle{
+    p{
+      @include adaptiv-font(24, 18);
+        font-family: "Gilroy-Medium";
+        color: rgb(44, 32, 26);
+        text-align: center;
+    }
+    h1{
+      @include adaptiv-font(48, 22);
+  font-family: "Gilroy-Heavy";
+  color: rgb(44, 32, 26);
+  line-height: 1;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 35px;
+    }
+
+  }
+    .popup_input{
+      position: relative;
+      input{
+      padding-left: 15px;
+      width: 100%;
+      height: 60px;
+      border:0px;
+background-color: rgb(253, 241, 234);
+font-size: 16px;
+font-family: "Gilroy-Regular";
+color: rgb(44, 32, 26);
+margin-bottom: 20px;
+}
+img{
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+    }
+    .button{
+      cursor: pointer;
+      margin-left: auto;
+margin-right: auto;
+display: flex;
+      margin-top: 30px;
+      @extend %button_linear;
+      &:hover{
+        background: linear-gradient(#f26d28 0%, #fe955f 100%);
+        transition: 0.5s;
+      }
+    }
+  }
+
+
+
+  .exit{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .popup_content_form_tittle{
+    @include adaptiv-font(36, 22);
+  font-family: "Avenir Next Cyr";
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-align: center;
+
+    }
+    .popup_content_form_tittle2{
+      @include adaptiv-font(20, 16);
+  font-family: "Avenir Next Cyr";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  @media only screen and (max-width: 1400px){
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+    }
+.submit{
+@extend %button_linear;
+width: 70%;
+text-align: center;
+display: flex;
+place-self:center;
+place-content:center;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+height: 70px;
+@include adaptiv-font(16, 14);
+
+@media only screen and (max-width: 1400px){
+  height: 50px;
+
+
+}
+cursor: pointer;
+}
+
+
+.field__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+  text-align: center;
+  @media only screen and (max-width: 1400px){
+    margin: 5px 0;
+
+
+  }
+}
+
+.field__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.field__file-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: relative;
+}
+
+.field__file-fake {
+  background-color: white;
+      border-radius: 50px;
+      height: 70px;
+      width: calc(100% - 130px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+padding-left: 5%;
+    border-radius: 50px;
+      border-right: none;
+      width: 100%;
+      @include adaptiv-font(16, 14);
+  font-family: "Avenir Next Cyr";
+  color: rgb(60, 176, 122);
+  font-weight: 900;
+  @media only screen and (max-width: 1400px){
+    height: 50px;
+
+
+  }
+}
+
+.field__file-button {
+  right: 5%;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/popup/download.png");
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}

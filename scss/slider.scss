@@ -1,0 +1,209 @@
+%button_fot_slider{
+  border-radius: 55px;
+    color: rgb(255, 255, 255);
+    padding:20px 25px;
+    display: inline-flex;
+    border:0px;
+  border-width: 1px;
+  border-color: rgb(242, 109, 40);
+  border-style: solid;
+  background-color: rgba(242, 109, 40, 0);
+    font-size: 14px;
+    font-family: "Gilroy-Heavy";
+    color: rgb(242, 109, 40);
+    &:hover{
+  border-width: 1px;
+  border-color: rgb(242, 109, 40);
+  border-style: solid;
+  background-color: rgb(242, 109, 40);
+  box-shadow: 0px 14px 15px 0px rgba(94, 46, 21, 0.34);
+  color: white;
+  transition: 0.3s;
+    }
+}
+$maxWidth: 1920;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+.slider,.slider2 {
+      position: relative;
+      overflow: hidden;
+
+      margin-left: auto;
+          margin-right: auto;
+
+    }
+    .slider2{
+      width: calc(100% - 80px);
+          @media only screen and (max-width: 600px){
+            width: calc(100% - 20px);
+    }
+  }
+.sliderKolya,.sliderKolya2{
+  position: relative;
+  width: 100%;
+}
+    .slider__wrapper{
+      display: flex;
+    }
+.slider__wrapper2 {
+display: flex;
+position: relative;
+}
+    .slider__item{
+      flex: 0 0 33.333%;
+      padding: 0px 0px;
+      @media only screen and (max-width: 1000px){
+        flex: 0 0 50%;
+    }
+    @media only screen and (max-width: 500px){
+      flex: 0 0 100%;
+  }
+    }
+    .slider__item2 {
+      flex: 0 0 25%;
+      padding: 0px 0px;
+      @media only screen and (max-width: 1000px){
+        flex: 0 0 50%;
+    }
+    @media only screen and (max-width: 500px){
+      flex: 0 0 100%;
+  }
+    }
+
+    .slider__control,.slider__control2 {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      height: 50px;
+      width: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+border: 0px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 4px 8px 0px rgba(27, 28, 32, 0.29);
+  @media only screen and (max-width: 450px){
+    height: 40px;
+    width: 38px;
+    }
+  }
+.slider__control2{
+  top:40%;
+}
+    .slider__control:hover,.slider__control2:hover,
+    .slider__control:focus,.slider__control2:focus {
+      text-decoration: none;
+
+    }
+
+    .slider__control_left{
+      left: 30px;
+    }
+    .slider__control_left2 {
+      left: -30px;
+      @media only screen and (max-width: 700px){
+        left: -10px;
+}
+@media only screen and (max-width: 600px){
+left: 50px;
+}
+    }
+    .slider__control_right{
+      right: 30px;
+    }
+  .slider__control_right2{
+      right: -15px;
+      @media only screen and (max-width: 700px){
+        right: -5px;
+}
+@media only screen and (max-width: 600px){
+right: 20px;
+}
+
+    }
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 12px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .slider__control2::before {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      width: 20px;
+      height: 12px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before, .slider__control_left2::before {
+      background-image: url("../img/block4/arrow_left.png");
+    }
+
+    .slider__control_right::before{
+      background-image: url("../img/block4/arrow_right.png");
+    }
+.slider__control_right2::before {
+  background-image: url("../img/block4/arrow_right.png");
+
+}
+    .slider__item2>div {
+      text-align: center;
+      img{
+      width: 100%;
+      height: 100%;
+      @media only screen and (max-width: 1000px){
+    }
+      @media only screen and (max-width: 500px){
+        height: 300px;
+    }
+      }
+      p{
+        @include adaptiv-font(19, 16);
+  font-family: "Gilroy-Bold";
+  color: rgb(44, 32, 26);
+  margin-bottom: 30px;
+  @media only screen and (max-width: 500px){
+margin-bottom: 15px;
+}
+      }
+      .button_slider2{
+        @extend %button_fot_slider;
+        margin-bottom: 25px;
+      }
+
+    }
+.slider__item>div{
+  text-align: center;
+  img{
+  width: 100%;
+  height: 100%;
+  @media only screen and (max-width: 1000px){
+}
+  @media only screen and (max-width: 500px){
+    height: 300px;
+}
+  }
+  p{
+    @include adaptiv-font(19, 16);
+font-family: "Gilroy-Bold";
+color: rgb(44, 32, 26);
+margin-bottom: 30px;
+@media only screen and (max-width: 500px){
+margin-bottom: 15px;
+}
+  }
+}

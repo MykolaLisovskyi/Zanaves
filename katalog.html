@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мастерская Жалюзи</title>
+  <link rel="icon" type="image/png" href="img/logoWP.png" />
+  <link rel="stylesheet" href="css/styleKatalog.css">
+  <link rel="stylesheet" href="font/gilroy.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/katalog.css">
+  <link rel="stylesheet" href="fancyBox/jquery.fancybox.min.css">
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+</head>
+
+<body>
+  <div class="col-md-4 col-xs-12 b-popup" id="popup1">
+    <div й class="pricepop lux b-popup-content">
+      <div class="popup_content_button">
+        <a href="javascript:PopUpHide()" class="exit"><img src="img/popup/exit.png" alt=""></a>
+
+        <div class="popup_tittle">
+          <p>Замерщик уже собрал все, что нужно.</p>
+          <h1>Куда ехать?</h1>
+        </div>
+        <form class="form-modal" action="#" data-wow-delay="0.8s" method="post" id="form-popup">
+          <div class="popup_input">
+            <input type="hidden" name="DATA[TITLE]" value="Рассчитать сумму по залогу" class="title">
+
+            <input type="text" class="input-text input-text_dark name" name="DATA[NAME]" value="" placeholder="Имя" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+          <div class="popup_input">
+            <input type="text" name="" class="input-text input-text_dark phone-input" id="phone2" value="" name="DATA[PHONE_MOBILE]" placeholder="+38 (___) ___-__-__" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+
+          <input class="button button_actb" type="submit" value="Рассчитать условия" />
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-4 col-xs-12 b-popup" id="popup2">
+    <div й class="pricepop lux b-popup-content">
+      <div class="popup_content_button">
+        <a href="javascript:PopUpHide2()" class="exit"><img src="img/popup/exit.png" alt=""></a>
+
+        <div class="popup_tittle">
+          <p>Консультант перезвонит в течение 15 минут и ответит на все вопросы</p>
+          <h1>Куда перезвонить?</h1>
+        </div>
+        <form class="form-modal" action="#" data-wow-delay="0.8s" method="post" id="form-credit">
+          <div class="popup_input">
+            <input type="hidden" name="DATA[TITLE]" value="Куда перезвонить?" class="title">
+
+            <input type="text" class="input-text input-text_dark name" name="DATA[NAME]" value="" placeholder="Имя" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+          <div class="popup_input">
+            <input type="text" name="" class="input-text input-text_dark phone-input" id="phone2" value="" name="DATA[PHONE_MOBILE]" placeholder="+38 (___) ___-__-__" required>
+            <img src="img/popup/stars.png" alt="">
+          </div>
+
+          <input class="button button_actb" type="submit" value="Рассчитать условия" />
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="col-md-4 col-xs-12 b-popup" id="popup3">
+    <div й class="pricepop lux b-popup-content">
+      <div class="popup_content_button">
+        <a href="javascript:PopUpHide3()" class="exit"><img src="img/popup/exit.png" alt=""></a>
+
+        <div class="popup_tittle">
+          <p>Спасибо что вы с нами</p>
+          <h1>Наш менеджер вам перезвонит</h1>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script>
+    $(document).ready(function() {
+
+    });
+
+    function PopUpShow() {
+      $("#popup1").css('display', 'flex');
+    }
+
+    function PopUpHide() {
+      $("#popup1").hide();
+    }
+
+    function PopUpShow2() {
+      $("#popup2").css('display', 'flex');
+    }
+
+    function PopUpHide2() {
+      $("#popup2").hide();
+    }
+
+    function PopUpShow3() {
+      $("#popup3").css('display', 'flex');
+    }
+
+    function PopUpHide3() {
+      $("#popup3").hide();
+    }
+  </script>
+  <header>
+    <div class="block1_content" style="">
+
+
+      <div class="header_logo" style="">
+        <div class="header_logo_left">
+          <img src="img/block1/Logo.png" alt="">
+        </div>
+
+        <div class="header_logo_center">
+          <nav>
+            <a href=""><img src="img/block1/viber.png" alt=""></a>
+            <a href=""><img src="img/block1/telegram.png" alt=""></a>
+            <a href=""><img src="img/block1/facebook.png" alt=""></a>
+            <a href=""><img src="img/block1/instagram.png" alt=""></a>
+          </nav>
+          <p>Подпишись и получи в подарок фиксацию ткани!</p>
+        </div>
+
+        <div class="header_logo_right">
+          <div class="header_logo_right_phone">
+            <img src="img/block1/phone.png" alt="">
+            <a href="tel:(098) 633-08-66">(098) 633-08-66</a>
+          </div>
+          <div class="header_logo_right_phone">
+            <img src="img/block1/phone.png" alt="">
+            <a href="tel:(050) 633-08-66">(050) 633-08-66</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="header_logo_mobile">
+        <div class="header_logo_center_mobile">
+          <nav>
+            <a href=""><img src="img/block1/viber.png" alt=""></a>
+            <a href=""><img src="img/block1/telegram.png" alt=""></a>
+            <a href=""><img src="img/block1/facebook.png" alt=""></a>
+            <a href=""><img src="img/block1/instagram.png" alt=""></a>
+          </nav>
+          <p>Подпишись и получи в подарок фиксацию ткани!</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </header>
+
+  <div class="hidden" style="display:none;">
+
+
+    Selected index: <span class="selected_index" id="selected"></span>
+    Times onchange triggered: <span class="on_change_times">0</span></div>
+  <script type="text/javascript">
+    var lastSelectedOption = null;
+
+    DDChange = function(Dd) {
+      //Blur after change so that clicking again without
+      //losing focus re-triggers onfocus.
+      Dd.blur();
+
+      //The rest is whatever you want in the change.
+      var tcs = $("span.on_change_times");
+      tcs.html(+tcs.html() + 1);
+      $("span.selected_index").html(Dd.prop("selectedIndex"));
+      var select = document.getElementById("selected").innerHTML;
+      if (select == "0") {
+        category1();
+      } else if (select == "1") {
+        category2();
+      } else if (select == "2") {
+        category3();
+      } else if (select == "3") {
+        category4();
+      } else if (select == "4") {
+        category5();
+      } else if (select == "5") {
+        category6();
+      }
+      return false;
+
+    };
+
+    DDFocus = function(Dd) {
+      lastSelectedOption = Dd.prop("selectedIndex");
+      Dd.prop("selectedIndex", -1);
+
+      $("span.selected_index").html(Dd.prop("selectedIndex"));
+      return false;
+    };
+
+    DDBlur = function(Dd) {
+      if (Dd.prop("selectedIndex") === -1)
+        Dd.prop("selectedIndex", lastSelectedOption);
+
+      $("span.selected_index").html(Dd.prop("selectedIndex"));
+      return false;
+
+    };
+  </script>
+  <div class="content">
+
+    <div class="catalog">
+      <img src="img/block2/star_fon.png" alt="" class="star1_catalog">
+      <img src="img/block2/star_fon.png" alt="" class="star2_catalog">
+      <img src="img/block2/star_fon.png" alt="" class="star3_catalog">
+      <div class="catalog_content">
+
+        <div class="catalog_tittle">
+          <h1>Выберите нужный вид изделий</h1>
+          <p>Мы подобрали для вас более 600 самых популярных в Европе тканей!</p>
+          <p>Качественніх и безопасных, которые не выгорают на солнце и прошли все возможные сертификации</p>
+          <select id="Dd" onchange="DDChange($(this)); " onfocus="DDFocus($(this));" onblur="DDBlur($(this));">
+            <option>Римские шторы</option>
+            <option>Рулонные шторы</option>
+            <option>Тканевые ролеты в коробе</option>
+            <option>Горизонтальные жалюзи</option>
+            <option>Ещё какие-то шторы/жалюзи</option>
+            <option>Ещё какие-то шторы/жалюзи2</option>
+
+          </select>
+        </div>
+
+        <!-- РИМСКИЕ ШТОРЫ  РИМСКИЕ ШТОРЫ  РИМСКИЕ ШТОРЫ  РИМСКИЕ ШТОРЫ  РИМСКИЕ ШТОРЫ !-->
+        <div class="catalog_gallery" id="gallery1">
+          <p class="name_gallery">Коллекция Блэкаут NOVA</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo5.png" data-fancybox="gallery">
+                <img src="img/catalog/photo5.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo6.png" data-fancybox="gallery">
+                <img src="img/catalog/photo6.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+          </div>
+          <p class="name_gallery">Коллекция Блэкаут NOVA</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo5.png" data-fancybox="gallery">
+                <img src="img/catalog/photo5.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo6.png" data-fancybox="gallery">
+                <img src="img/catalog/photo6.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- РУЛЛОННЫЕ ШТОРЫ РУЛЛОНЫЕ ШТОРЫ !-->
+        <div class="catalog_gallery" id="gallery2">
+          <p class="name_gallery">Коллекция РУЛЛОНЫХ ШТОР </p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+
+          </div>
+          <p class="name_gallery">Коллекция Блэкаут NOVA</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo5.png" data-fancybox="gallery">
+                <img src="img/catalog/photo5.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo6.png" data-fancybox="gallery">
+                <img src="img/catalog/photo6.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Тканевые ролеты Тканевые ролеты Тканевые ролеты !-->
+        <div class="catalog_gallery" id="gallery3">
+          <p class="name_gallery">Тканевые ролеты </p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+
+          </div>
+          <p class="name_gallery">Тканевые ролеты</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo5.png" data-fancybox="gallery">
+                <img src="img/catalog/photo5.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo6.png" data-fancybox="gallery">
+                <img src="img/catalog/photo6.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Горизонтальные жалюзи Горизонтальные жалюзи Горизонтальные жалюзи !-->
+        <div class="catalog_gallery" id="gallery4">
+          <p class="name_gallery">Горизонтальные жалюзи </p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+
+          </div>
+          <p class="name_gallery">Тканевые ролеты</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo5.png" data-fancybox="gallery">
+                <img src="img/catalog/photo5.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo6.png" data-fancybox="gallery">
+                <img src="img/catalog/photo6.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ещё какие-то Ещё какие-то Ещё какие-то Ещё какие-то !-->
+        <div class="catalog_gallery" id="gallery5">
+          <p class="name_gallery">Ещё какие-то </p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+
+          </div>
+          <p class="name_gallery">Тканевые ролеты</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo5.png" data-fancybox="gallery">
+                <img src="img/catalog/photo5.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo6.png" data-fancybox="gallery">
+                <img src="img/catalog/photo6.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Ещё какие-то 2 Ещё какие-то 2 Ещё какие-то 2 !-->
+        <div class="catalog_gallery" id="gallery6">
+          <p class="name_gallery">Ещё какие-то 2</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+
+          </div>
+          <p class="name_gallery">Тканевые ролеты</p>
+          <div class="gallery">
+            <div class="gallery_item">
+              <a href="img/catalog/photo1.png" data-fancybox="gallery">
+
+                <img src="img/catalog/photo1.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo2.png" data-fancybox="gallery">
+                <img src="img/catalog/photo2.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo3.png" data-fancybox="gallery">
+                <img src="img/catalog/photo3.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo4.png" data-fancybox="gallery">
+                <img src="img/catalog/photo4.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo5.png" data-fancybox="gallery">
+                <img src="img/catalog/photo5.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo6.png" data-fancybox="gallery">
+                <img src="img/catalog/photo6.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+            <div class="gallery_item">
+              <a href="img/catalog/photo7.png" data-fancybox="gallery">
+                <img src="img/catalog/photo7.png" alt=""></a>
+              <div class="gallery_item_info">
+                <p>Блэкаут NOVA F24-7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        category1()
+      });
+
+      function category1() {
+        document.getElementById('gallery1').style.display = "flex";
+        document.getElementById('gallery2').style.display = "none";
+        document.getElementById('gallery3').style.display = "none";
+        document.getElementById('gallery4').style.display = "none";
+        document.getElementById('gallery5').style.display = "none";
+        document.getElementById('gallery6').style.display = "none";
+      }
+
+      function category2() {
+        document.getElementById('gallery2').style.display = "flex";
+        document.getElementById('gallery1').style.display = "none";
+        document.getElementById('gallery3').style.display = "none";
+        document.getElementById('gallery4').style.display = "none";
+        document.getElementById('gallery5').style.display = "none";
+        document.getElementById('gallery6').style.display = "none";
+      }
+
+      function category3() {
+        document.getElementById('gallery3').style.display = "flex";
+        document.getElementById('gallery2').style.display = "none";
+        document.getElementById('gallery1').style.display = "none";
+        document.getElementById('gallery4').style.display = "none";
+        document.getElementById('gallery5').style.display = "none";
+        document.getElementById('gallery6').style.display = "none";
+      }
+
+      function category4() {
+        document.getElementById('gallery4').style.display = "flex";
+        document.getElementById('gallery2').style.display = "none";
+        document.getElementById('gallery1').style.display = "none";
+        document.getElementById('gallery3').style.display = "none";
+        document.getElementById('gallery5').style.display = "none";
+        document.getElementById('gallery6').style.display = "none";
+      }
+
+      function category5() {
+        document.getElementById('gallery5').style.display = "flex";
+        document.getElementById('gallery2').style.display = "none";
+        document.getElementById('gallery1').style.display = "none";
+        document.getElementById('gallery4').style.display = "none";
+        document.getElementById('gallery3').style.display = "none";
+        document.getElementById('gallery6').style.display = "none";
+      }
+
+      function category6() {
+        document.getElementById('gallery6').style.display = "flex";
+        document.getElementById('gallery2').style.display = "none";
+        document.getElementById('gallery1').style.display = "none";
+        document.getElementById('gallery4').style.display = "none";
+        document.getElementById('gallery5').style.display = "none";
+        document.getElementById('gallery3').style.display = "none";
+      }
+    </script>
+
+    <div class="block7">
+      <div class="block7_content">
+        <div class="content">
+
+          <div class="block7_content_left">
+            <img src="img/block7/man.png" alt="">
+          </div>
+          <div class="block7_content_right">
+            <p>Хотите увидеть каталог тканей собственными глазами?</p>
+            <p>Закажите бесплатный замер. Опытный специалист все тщательно измерит, поможет в выборе тканей и назовет окончательную сумму.</p>
+            <p>Бесплатно. Даже если вы ничего не закажете.</p>
+            <p>Управляйте солнцем с нами</p>
+            <a href="javascript:PopUpShow();">Записаться на замер</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="footer_content">
+      <div class="left_content">
+        <p>© Мастерская жалюзи Zanaves.</p>
+        <p>Все права защищены.</p>
+        <img src="img/footer/sign.png" alt="">
+      </div>
+      <div class="center_content">
+        <div class="social">
+          <a href="#"><img src="img/footer/viber.png" alt=""></a>
+          <a href="#"><img src="img/footer/telegram.png" alt=""></a>
+          <a href="#"><img src="img/footer/facebook.png" alt=""></a>
+          <a href="#"><img src="img/footer/instagram.png" alt=""></a>
+
+        </div>
+        <p>Подпишись и получи в подарок фиксацию ткани!</p>
+      </div>
+      <div class="right_content">
+        <div class="mobile">
+          <div class="mobile_item">
+            <img src="img/footer/phone.png" alt="">
+            <a href="tel:(098) 633-08-66">(098) 633-08-66</a>
+
+          </div>
+          <div class="mobile_item">
+            <img src="img/footer/phone.png" alt="">
+            <a href="tel:(050) 633-08-66">(050) 633-08-66</a>
+
+          </div>
+        </div>
+        <div class="mail">
+          <img src="img/footer/email.png" alt="">
+          <a href="mailto:info.zanaves@gmail.com">info.zanaves@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+  <script src="fancyBox/jquery.fancybox.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
